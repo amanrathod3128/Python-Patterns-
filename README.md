@@ -1,5 +1,5 @@
 # Python-Patterns-
-## Hi! Here I will upload a regular Python pattern program with an explanation.
+## Hi! Here I will upload a regular Python pattern program.
 
 ### <li> Steps to Print a Pattern in Python
 <ol>
@@ -22,10 +22,22 @@ Move to the Next Line After Each Row:
 
 </ol>
 
-After completing a row, use print() without any arguments to move the cursor to the next line.
+After completing a row, use print() without arguments to move the cursor to the next line.
 This ensures the next set of symbols is printed on a new line.
 # ----------------------------------------------------------------------------
 
+<h3><b>Square Pattern</b></h3>
+
+        *****                            row = 5                         - We want 5 rows of stars
+        *****                            for i in range(1,row+1):        - This loop will run 5 times (once for each row) 
+        *****                               for j in range(1,row+1):     - This loop will also run 5 times for each row (to print 5 stars) 
+        *****                                   print('*',end=' ')       - printing * to print one single line we are using the end keyword
+        *****                               print()                      - Move to the next line after printing 5 stars    
+        
+        
+        
+        
+        
 
 
 
