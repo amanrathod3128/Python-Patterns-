@@ -27,6 +27,8 @@ This ensures the next set of symbols is printed on a new line.
 # ----------------------------------------------------------------------------
 
 ### All code should be created to be dynamic, taking input from the user and replacing it with the row.
+        n = int(input("Enter the number of rows: "))
+        row = n
 
 <h3><b>Square Pattern</b></h3>
 
@@ -45,8 +47,13 @@ This ensures the next set of symbols is printed on a new line.
         ****
         *****
         
-        
-        
+<h3><b>Inverted Right-Angled Triangle</b></h3>        
+
+        *****                           row = 5                          - we want 5 rows of stars
+        ****                            for i in range(row):             - this loop will run 5 times
+        ***                                  for j in range(i,row):      - this will go in reverse like i-1 
+        **                                        print('*', end=' ')    - Printing * for a single line with the respective i.
+        *                                    print()                     - for next line
 
 
 
