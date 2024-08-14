@@ -32,37 +32,47 @@ This ensures the next set of symbols is printed on a new line.
 
 <h3><b>Square Pattern</b></h3>
 
-        *****                          row = 5                         - We want 5 rows of stars
-        *****                          for i in range(1,row+1):        - This loop will run 5 times (once for each row) 
-        *****                             for j in range(1,row+1):     - This loop will also run 5 times for each row (to print 5 stars) 
-        *****                                 print('*',end=' ')       - printing * to print one single line we are using the end keyword
-        *****                              print()                      - Move to the next line after printing 5 stars    
+        * * * * *                          row = 5                         - We want 5 rows of stars
+        * * * * *                          for i in range(1,row+1):        - This loop will run 5 times (once for each row) 
+        * * * * *                             for j in range(1,row+1):     - This loop will also run 5 times for each row (to print 5 stars) 
+        * * * * *                                 print('*',end=' ')       - printing * to print one single line we are using the end keyword
+        * * * * *                              print()                     - Move to the next line after printing 5 stars    
         
 
-<h3><b>Right-Angled Triangle</b></h3>
+<h3><b>Right-Angled Triangle - 1</b></h3>
 
         *                              row = 5;                        - we want 5 rows of stars
-        **                             for i in range(1,row+1)         - this loop will run 5 times
-        ***                                 print('* ' * i );          - Printing * for a single line with the respective 'i', i.e. when i=1, print one *, when i=2, print two *s, when i=3, print three *s, and so on."
-        ****
-        *****
-        
+        * *                            for i in range(1,row+1)         - this loop will run 5 times
+        * * *                               print('* ' * i );          - Printing * for a single line with the respective 'i', i.e. when i=1, print one *, when i=2, print two *s, when i=3, print three *s, and so on."
+        * * * *
+        * * * * *
+
+<h3><b>Right-Angled Triangle -2 </b></h3> 
+
+                *                     row = 5                            - we want 5 rows of stars
+              * *                      for i in range(1, row+1):         - this loop will run 5 times
+            * * *                           for j in range(i,row):
+          * * * *                                print(' ',end=' ')      - printing spaces 
+        * * * * *                           for j in range(i):
+                                                 print('*',end=' ')      - printing * after completing spaces
+                                            print()
+
 <h3><b>Inverted Right-Angled Triangle</b></h3>        
 
-        *****                         row = 5                          - we want 5 rows of stars
-        ****                          for i in range(row):             - this loop will run 5 times
-        ***                                for j in range(i,row):      - this will go in reverse like i-1 
-        **                                      print('*', end=' ')    - Printing * for a single line with the respective i.
-        *                                  print()                     - for next line
+        * * * * *                        row = 5                          - we want 5 rows of stars
+        * * * *                          for i in range(row):             - this loop will run 5 times
+        * * *                                for j in range(i,row):       - this will go in reverse like i-1 
+        * *                                      print('*', end=' ')      - Printing * for a single line with the respective i.
+        *                                    print()                      - for next line
 
 
 <h3><b>Pyramid</b></h3> 
 
-            *                        row = 4                             - Number of rows
-           ***                       for i in range(1, n + 1):  
-          *****                           print(' ' * (n - i), end='')   - Print leading spaces to center the pyramid
-         *******                          print('*' * (2 * i - 1))       - Print asterisks for the current row
-        *********  
+                *                        row = 4                               - Number of rows
+              * * *                      for i in range(1, row + 1):  
+            * * * * *                         print(' ' * (row - i), end='')   - Print leading spaces to center the pyramid
+          * * * * * * *                       print('*' * (2 * i - 1))         - Print asterisks for the current row
+        * * * * * * * * *  
            
           
           
