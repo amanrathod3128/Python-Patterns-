@@ -47,7 +47,7 @@ This ensures the next set of symbols is printed on a new line.
         * * * *
         * * * * *
 
-<h3><b>Right-Angled Triangle -2 </b></h3> 
+<h3><b>Right-Angled Triangle - 2 </b></h3> 
 
                 *                     row = 5                            - we want 5 rows of stars
               * *                      for i in range(1, row+1):         - this loop will run 5 times
@@ -57,7 +57,7 @@ This ensures the next set of symbols is printed on a new line.
                                                  print('*',end=' ')      - printing * after completing spaces
                                             print()
 
-<h3><b>Inverted Right-Angled Triangle</b></h3>        
+<h3><b>Inverted Right-Angled Triangle - 1</b></h3>        
 
         * * * * *                        row = 5                          - we want 5 rows of stars
         * * * *                          for i in range(row):             - this loop will run 5 times
